@@ -28,7 +28,7 @@ An Instagram Backend API made using GO-lang and mongoDB. Tested using POSTMAN. A
 - **main.go**
 
 
-### Challenges:
+## Challenges:
 
 - **Create User** <br> 
 A POST request using the URL `'/users'` which returns the user info in JSON format
