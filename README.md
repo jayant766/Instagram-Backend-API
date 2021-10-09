@@ -9,7 +9,7 @@
 |_getUserPostgo.go
 |_ _ _
 
--**models**
+- **models**
 |_post.go
 |_user.go
 |_ _ _
