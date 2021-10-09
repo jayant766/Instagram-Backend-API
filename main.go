@@ -1,7 +1,4 @@
-// Created by Kartik Khanna 19BCE0531 BTECH CSE 2019-2023 
 package main
-
-// Imported userdefined packages and standard libarary packages to the project
 import (
 	
 	"fmt"
@@ -14,7 +11,6 @@ import (
 	
 )
 
-//Connection of mongoDB with controller
 var postCollection, userCollection = controller.ConnectDB()
 
 
@@ -25,7 +21,6 @@ func main() {
 
 	mux := mux.NewRouter()
 	
-	//Routes
 	mux.HandleFunc("/", index)
 	mux.HandleFunc("/posts", route.InsertPost).Methods("GET")
 	mux.HandleFunc("/users", route.InsertUser).Methods("GET")
@@ -40,4 +35,3 @@ func main() {
 	log.Fatal(http.ListenAndServe(":9000", mux))
 
 }
-// Created by Kartik Khanna 19BCE0531 BTECH CSE 2019-2023 
