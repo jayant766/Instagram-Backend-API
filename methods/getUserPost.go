@@ -22,7 +22,6 @@ func GetUserPost(w http.ResponseWriter, r *http.Request) {
 
 	id, _ := params["id"]
 
-	// Quering multiple objects in the mongoDB
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
 
 	filterCursor, err := postCollection.Find(ctx, bson.M{"userid": id})
@@ -36,11 +35,9 @@ func GetUserPost(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(allUserPost)
 
 	
-	//Pagination to limit the posts display at a time and add more posts after certain posts
 
     filter:=bson.M{}
 	findOptions := options.Find()
-	// page, _ := strconv.Atoi(postCollection.Query("page", "1"))
  	page, _ := postCollection.CountDocuments(ctx, bson.M{"page":"1"})
 	  
 		var perPage int64 = 10
