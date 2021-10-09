@@ -15,8 +15,6 @@ import (
 func GetUserPost(w http.ResponseWriter, r *http.Request) {
 	
 	w.Header().Set("Content-Type", "application/json")
-
-	
 	
 	var params = mux.Vars(r)
 
@@ -33,7 +31,6 @@ func GetUserPost(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 	fmt.Println(allUserPost)
-
 	
 
     filter:=bson.M{}
