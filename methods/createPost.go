@@ -53,7 +53,6 @@ func CreatePost(w http.ResponseWriter, r *http.Request) {
 
 	var post models.Post
 
-	// we decode our body request params
 	_ = json.NewDecoder(r.Body).Decode(&post)
 
 	currentTime := time.Now()
