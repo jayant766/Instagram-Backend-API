@@ -1,45 +1,31 @@
 # Instagram-Backend-API
 
 ## Project Structure
-- **DataVisualizationImages**
-|_AccuracyCNN.png
+- **methods**
+|_createPost.go
+|_createUser.go
+|_getPost.go
+|_getUser.go
+|_getUserPostgo.go
 |_ _ _
 
-**Entry_snapshot**
-|_screenshot_1
-|_screenshot_2
-
-- **data**
-|_train_testing/
-|_train_testing/
-|_train_testing_sp/
-|_train-validation/
-
-- **documented_jupyter_notebook**
-|_ipynb-checkpoint/
-|_.gitkeep/
-|_00 Exploratory Data Analysis.ipynb/
+**models**
+|_post.go
+|_user.go
 |_ _ _
 
-- **libraries**
-|_classification/
-|_.gitkeep
+- **README**
+|_ _ _
 
-- **models (Pretrained Models)**
-|_c_rnn/
-|_convlstm/
-|_ds_cnn/
-|_ds_cnn_spec|
-|_gru\
-|_Istm_I\
+- **controller.go**
+|_ _ _
 
-- **scripts (Executable scripts)**
-|_execute_notebook.py
-- **visual**
-|_PCA.png
+- **go.mod**
+|_ _ _
 
-- **License**
+- **go.sum**
+|_ _ _
 
-- **README.md**
 
-- **Report**
+- **main.go**
+|_ _ _
