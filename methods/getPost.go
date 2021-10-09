@@ -21,10 +21,8 @@ func GetPost(w http.ResponseWriter, r *http.Request) {
 	// we get params with mux.
 	var params = mux.Vars(r)
 
-	// string to primitive.ObjectID
 	id, _ := primitive.ObjectIDFromHex(params["id"])
 
-	// We create filter.  Using bson.M{} as it is not necessary to sort data
 	filter := bson.M{"_id": id}
 	err := postCollection.FindOne(context.TODO(), filter).Decode(&post)
 
