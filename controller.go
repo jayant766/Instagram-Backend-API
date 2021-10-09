@@ -12,7 +12,7 @@ import (
 )
 
 func ConnectDB() (*mongo.Collection,*mongo.Collection) {
-	clientOptions := options.Client().ApplyURI("mongodb+srv://kartik:Test123@cluster0.ui1ab.mongodb.net/Instragram_api?retryWrites=true&w=majority")
+	clientOptions := options.Client().ApplyURI("mongodb+srv://jayant:Test766@cluster0.ui1ab.mongodb.net/Instragram_api?retryWrites=true&w=majority")
 
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 
