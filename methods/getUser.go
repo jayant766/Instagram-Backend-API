@@ -20,8 +20,7 @@ func GetUser(w http.ResponseWriter, r *http.Request) {
 	var user models.User
 
 	var params = mux.Vars(r)
-
-	// string to primitive.ObjectID
+	
 	id, _ := primitive.ObjectIDFromHex(params["id"])
 
 	
