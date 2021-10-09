@@ -12,11 +12,8 @@ import (
 )
 
 func ConnectDB() (*mongo.Collection,*mongo.Collection) {
-
-	// Used MongoDB Cluster for the project with database name Instagram_api and collections: posts and user 
 	clientOptions := options.Client().ApplyURI("mongodb+srv://kartik:Test123@cluster0.ui1ab.mongodb.net/Instragram_api?retryWrites=true&w=majority")
 
-	// Connection to MongoDB
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 
 	if err != nil {
