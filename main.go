@@ -30,7 +30,6 @@ func main() {
 	mux.HandleFunc("/posts", route.CreatePost).Methods("POST")
 	mux.HandleFunc("/users", route.CreateUser).Methods("POST")
 
-	//Server set up
 	fmt.Println("Server Started at port 9000")
 	log.Fatal(http.ListenAndServe(":9000", mux))
 
