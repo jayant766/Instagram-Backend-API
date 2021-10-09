@@ -39,3 +39,15 @@ A POST request using the URL `/post` which returns the post info in JSON format
 - **Get a Post using id*** <br>
 A GET request using the URL `'/postid/<id here>'` which returns the post info in JSON format
 
+# Requirement:
+
+1. Golang
+2. MongoDB
+3. VScode
+
+# Packages Used :
+1. Mogo Driver
+2. Math
+3. Date
+4. Crypt (for encryption)
+
