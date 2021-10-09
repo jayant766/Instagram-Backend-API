@@ -52,10 +52,8 @@ func CreateUser(w http.ResponseWriter, r *http.Request) {
 
 	var user models.User
 
-	// we decode our body request params
 	_ = json.NewDecoder(r.Body).Decode(&user)
 
-	// insert our User model.
 	data := []byte("hello")
 	hash := md5.Sum(data)
 	user.Password = hex.EncodeToString(hash[:])
