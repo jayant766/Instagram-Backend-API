@@ -14,11 +14,9 @@ import (
 
 
 func GetPost(w http.ResponseWriter, r *http.Request) {
-	// set header.
 	w.Header().Set("Content-Type", "application/json")
 
 	var post models.Post
-	// we get params with mux.
 	var params = mux.Vars(r)
 
 	id, _ := primitive.ObjectIDFromHex(params["id"])
